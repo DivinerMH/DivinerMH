@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there 🌱👋
 ![DivinerMH's github stats](https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical)
 
 https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical
