@@ -1,4 +1,4 @@
-### Hi there 🌱👋
+### Hello, this is my basic information 🌱
 ![DivinerMH's github stats](https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical)
 
 <!--
@@ -21,3 +21,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
