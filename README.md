@@ -4,7 +4,7 @@
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&hide_title=true">
 
 <!-- 此为左侧的基础信息介绍 -->
-### Hello, this is my basic information 🌱
+### Hello, this is my basic information 😄
 > I'm MengHuan.  &nbsp;&nbsp;&nbsp;  A positive young man
 
 🇨🇳 &nbsp;China WuHan
