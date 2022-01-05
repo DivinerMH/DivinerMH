@@ -1,9 +1,10 @@
 ### Hello, this is my basic information 🌱
 > Hi, I'm TyCoding.
 
-🇨🇳 &nbsp;China BeiJing  &nbsp;&nbsp;&nbsp; 🌱 &nbsp;Unknow
+🇨🇳 &nbsp;China WuHan  &nbsp;&nbsp;&nbsp; 🌱 &nbsp;
 
-[http://tycoding.cn](http://tycoding.cn)
+
+[http://menghuan.cn](http://menghuan.cn)
 
 <!-- 此github-readme-stats.vercel.app效果 欠佳 -->
 <!--![DivinerMH's github stats](https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical)-->
