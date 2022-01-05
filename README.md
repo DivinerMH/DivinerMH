@@ -1,3 +1,8 @@
+<!-- 此github-readme-stats.vercel.app效果 欠佳 -->
+<!--![DivinerMH's github stats](https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical)-->
+
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&hide_title=true">
+
 ### Hello, this is my basic information 🌱
 > I'm MengHuan.
 
@@ -5,13 +10,6 @@
 
 
 [My personal website : http://menghuan.cn](http://menghuan.cn)
-
-<!-- 此github-readme-stats.vercel.app效果 欠佳 -->
-<!--![DivinerMH's github stats](https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical)-->
-
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&hide_title=true">
-
-
 
 <!--
 https://github-readme-stats.vercel.app/api?username=DivinerMH&show_icons=true&theme=radical
