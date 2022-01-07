@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,14 +16,18 @@ import java.io.Serializable;
  */
 @Data
 @TableName("tb_article_category")
+@ApiModel(value = "文章与文章分类中间表实体类")
 public class SysArticleCategory implements Serializable {
 
-    @TableId(type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty(value = "主键id", name = "id")
     private Long id;
 
+    @ApiModelProperty(value = "文章id", name = "articleId")
     @TableField("article_id")
     private Long articleId;
 
+    @ApiModelProperty(value = "文章分类id", name = "categoryId")
     @TableField("category_id")
     private Long categoryId;
 
@@ -29,4 +35,5 @@ public class SysArticleCategory implements Serializable {
         this.articleId = articleId;
         this.categoryId = categoryId;
     }
+
 }
