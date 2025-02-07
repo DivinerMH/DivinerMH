@@ -32,4 +32,16 @@ public interface CommonConstant {
     /** 锁定状态：9 */
     String STATUS_LOCK = "9";
 
+    /*----------------------------拓展--------------------------*/
+
+    /**
+     * String 类型的空值
+     */
+    String STRING_NULL = "null";
+
+    /**
+     * 未知的
+     */
+    String UNKNOWN = "unknown";
+
 }
