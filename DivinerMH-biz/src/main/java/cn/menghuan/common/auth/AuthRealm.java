@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Shiro Realm实现
+ * Shiro Realm 实现
  *
  * @author tycoding
  * @date 2020/6/27

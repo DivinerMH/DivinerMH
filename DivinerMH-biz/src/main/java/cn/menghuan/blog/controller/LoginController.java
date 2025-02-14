@@ -12,6 +12,7 @@ import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.OperatingSystem;
 import eu.bitwalker.useragentutils.UserAgent;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,7 @@ public class LoginController extends BaseController {
      * @param password
      * @return
      */
+    @ApiOperation(value = "登录接口")
     @GetMapping("/login")
     public R login(@RequestParam(value = "username", required = false) String username,
                    @RequestParam(value = "password", required = false) String password) {

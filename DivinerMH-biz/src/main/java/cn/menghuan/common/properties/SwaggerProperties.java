@@ -18,4 +18,5 @@ public class SwaggerProperties {
     private String url;
     private String email;
     private String version;
+
 }

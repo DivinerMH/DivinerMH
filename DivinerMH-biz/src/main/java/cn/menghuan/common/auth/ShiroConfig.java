@@ -44,6 +44,7 @@ public class ShiroConfig {
         filter.setSuccessUrl(shiro.getSuccessUrl());
 
         Map<String, String> filterChain = new LinkedHashMap<>();
+        // 控制非过滤资源
         String[] urls = shiro.getAnonUrl().split(",");
         for (String url : urls) {
             filterChain.put(url, "anon");

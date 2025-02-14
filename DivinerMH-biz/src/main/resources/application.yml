@@ -20,3 +20,21 @@ mybatis-plus:
     jdbc-type-for-null: null
   global-config:
     banner: false
+
+#swagger
+knife4j:
+  #开启增强配置
+  enable: true
+  #开启生产环境屏蔽
+  production: ture
+  basic:
+    enable: false
+    username: dfzl
+    password: dfzl@lzfd
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
