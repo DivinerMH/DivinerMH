@@ -228,6 +228,13 @@
                 <configuration>
                     <mainClass>cn.menghuan.BlogApplication</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal> <!-- 执行 repackage 目标 -->
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
