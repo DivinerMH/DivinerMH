@@ -4,6 +4,15 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: root
-    # url: jdbc:mysql://8.130.109.125:3306/tumo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
-    url: jdbc:mysql://139.196.143.72:3306/think_everyday?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    password: Mh1096464960
+    url: jdbc:mysql://8.130.109.125:3306/tumo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    # url: jdbc:mysql://139.196.143.72:3306/think_everyday?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+knife4j:
+  #开启增强配置
+  enable: true
+  #开启生产环境屏蔽
+  production: false
+  basic:
+    enable: false
+    username: dfzl
+    password: dfzl@lzfd

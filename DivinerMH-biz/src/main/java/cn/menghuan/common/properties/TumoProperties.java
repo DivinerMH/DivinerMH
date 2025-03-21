@@ -22,4 +22,5 @@ public class TumoProperties {
     private ShiroProperties shiro = new ShiroProperties();
 
     private SwaggerProperties swagger = new SwaggerProperties();
+
 }

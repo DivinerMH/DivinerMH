@@ -31,7 +31,7 @@ public class AuthSessionManager extends DefaultWebSessionManager {
             request.setAttribute(ShiroHttpServletRequest.REFERENCED_SESSION_ID_IS_VALID, Boolean.TRUE);
             return token;
         } else {
-            // 否则按默认从Cookie中获取JSESSIONID
+            // 否则按默认从Cookie中获取 JSESSIONID
             return super.getSessionId(request, response);
         }
     }
