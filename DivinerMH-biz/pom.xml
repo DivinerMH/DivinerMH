@@ -226,6 +226,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- 整合DictAspect 250508 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>2.7.18</version>
+        </dependency>
+
     </dependencies>
 
     <build>

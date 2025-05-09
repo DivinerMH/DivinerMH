@@ -30,7 +30,7 @@ import java.util.List;
  */
 @Configuration
 @EnableSwagger2
-@EnableKnife4j     //开启 knife4j，可以不写
+@EnableKnife4j
 public class SwaggerConfig implements WebMvcConfigurer {
 
     @Autowired
@@ -53,21 +53,6 @@ public class SwaggerConfig implements WebMvcConfigurer {
      *
      * @return Docket
      */
-    /*@Bean(value = "defaultApi2")
-    public Docket defaultApi2() {
-        SwaggerProperties swagger = properties.getSwagger();
-        return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo(swagger))
-                .select()
-                // 此包路径下的类，才生成接口文档
-                .apis(RequestHandlerSelectors.basePackage(swagger.getBasePackage()))
-                // 加了ApiOperation注解的类，才生成接口文档
-                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
-                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .paths(PathSelectors.any())
-                .build();
-    }*/
-
     @Bean
     public Docket createRestApi() {
         List<ResponseMessage> responseMessages = new ArrayList<>();
