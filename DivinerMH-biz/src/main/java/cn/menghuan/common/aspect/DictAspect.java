@@ -1,3 +1,4 @@
+/*
 package cn.menghuan.common.aspect;
 
 import cn.hutool.core.util.StrUtil;
@@ -30,10 +31,12 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+*/
 /**
  * @description: 字典aop类
  * @version: 1.0
- */
+ *//*
+
 @Aspect
 @Component
 @Slf4j
@@ -49,9 +52,11 @@ public class DictAspect {
 
     private static final String JAVA_UTIL_DATE = "java.util.Date";
 
-    /**
+    */
+/**
      * 主切点：匹配Controller或@Dict方法
-     */
+     *//*
+
     @Pointcut(
             "execution(public * cn.menghuan..*.*Controller.*(..)) " +
                     "|| @annotation(cn.menghuan.common.aspect.annotation.Dict)"
@@ -59,25 +64,31 @@ public class DictAspect {
     public void mainPointcut() {
     }
 
-    /**
+    */
+/**
      * 排除的切点：匹配 Service 层方法
-     */
+     *//*
+
     @Pointcut("execution(* cn.menghuan..*Service.*(..))")
     public void excludeService() {
     }
 
-    /**
+    */
+/**
      * 最终切点：主逻辑 - 排除 Service 层方法
-     */
+     *//*
+
     @Pointcut("mainPointcut() && !excludeService()")
     public void finalPointcut() {
     }
 
-    /**
+    */
+/**
      * 环绕通知：用于统计目标方法的执行耗时，并对返回结果进行字典文本解析和注入
      * @param pjp 切入点对象，用于执行目标方法 - ProceedingJoinPoint pjp：连接点对象，可获取目标方法信息，并通过 pjp.proceed() 执行目标方法
      * @return 经过字典处理后的结果对象
-     */
+     *//*
+
     @Around("finalPointcut()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         long requestStartTime = System.currentTimeMillis();
@@ -90,7 +101,8 @@ public class DictAspect {
         return result;
     }
 
-    /**
+    */
+/**
      * 本方法针对返回对象为 Result 的 IPage 的分页列表数据进行动态字典注入
      *      1、支持 IPage、List、Po - 250306
      * 字典注入实现 通过对实体类添加注解 @dict 来标识需要的字典内容,字典分为单字典code即可 ，table字典 code table text
@@ -114,7 +126,8 @@ public class DictAspect {
      *             }
      *             目前 vue 是这么进行字典渲染到 table 上的多了就很麻烦了，这个直接在服务端渲染完成前端可以直接用
      * @param result 转化后的结果集
-     */
+     *//*
+
     private Object parseDictText(Object result) {
         // 构建容器
         List<JSONObject> items = new ArrayList<>();
@@ -169,13 +182,15 @@ public class DictAspect {
         return result;
     }
 
-    /**
+    */
+/**
      * 数据翻译
      * @param items
      * @param dictFieldList
      * @param dataListMap
      * @param records
-     */
+     *//*
+
     private void dataConversion(List<JSONObject> items, List<Field> dictFieldList,
                                 Map<String, List<String>> dataListMap, List<Object> records) {
         log.debug(" —— 进入字典翻译切面 DictAspect —— ");
@@ -279,23 +294,27 @@ public class DictAspect {
         }
     }
 
-    /**
+    */
+/**
      * list 去重添加
-     */
+     *//*
+
     private void listAddAllDeduplicate(List<String> dataList, List<String> addList) {
         // 筛选出dataList中没有的数据
         List<String> filterList = addList.stream().filter(i -> !dataList.contains(i)).collect(Collectors.toList());
         dataList.addAll(filterList);
     }
 
-    /**
+    */
+/**
      * 一次性把所有的字典都翻译了
      * ----1. 所有的普通数据字典的所有数据只执行一次SQL
      * ----2. 表字典相同的所有数据只执行一次SQL
      *
      * @param dataListMap
      * @return
-     */
+     *//*
+
     private Map<String, List<DictModel>> translateAllDict(Map<String, List<String>> dataListMap) {
         // 翻译后的字典文本，key=dictCode
         Map<String, List<DictModel>> translText = new HashMap<>(5);
@@ -411,13 +430,15 @@ public class DictAspect {
         return translText;
     }
 
-    /**
+    */
+/**
      * 字典值替换文本
      *
      * @param dictModels
      * @param values
      * @return
-     */
+     *//*
+
     private String translDictText(List<DictModel> dictModels, String values) {
         List<String> result = new ArrayList<>();
 
@@ -436,7 +457,8 @@ public class DictAspect {
         return String.join(",", result);
     }
 
-    /**
+    */
+/**
      * 翻译字典文本
      *
      * @param code
@@ -444,7 +466,8 @@ public class DictAspect {
      * @param table
      * @param key
      * @return
-     */
+     *//*
+
     @Deprecated
     private String translateDictValue(String code, String text, String table, String key) {
         if (CustConvertUtils.isEmpty(key)) {
@@ -497,12 +520,14 @@ public class DictAspect {
         return textValue.toString();
     }
 
-    /**
+    */
+/**
      * 检测返回结果集中是否包含Dict注解
      *
      * @param records
      * @return
-     */
+     *//*
+
     private Boolean checkHasDict(List<Object> records) {
         if (CustConvertUtils.isNotEmpty(records) && records.size() > 0) {
             for (Field field : CustConvertUtils.getAllFields(records.get(0))) {
@@ -515,3 +540,4 @@ public class DictAspect {
     }
 
 }
+*/

@@ -35,6 +35,7 @@
         <jsoup.version>1.12.1</jsoup.version>
         <qiniu-sdk.version>7.2.17</qiniu-sdk.version>
         <ip2region.version>1.7.2</ip2region.version>
+
         <swagger.version>2.9.2</swagger.version>
         <swagger-other.version>1.5.21</swagger-other.version>
     </properties>
